@@ -17,18 +17,30 @@
         <div class="text-center mt-1 mt-md-5 text-white display-5 display-md-4">Jeopardy Quiz</div>
         <div class="container">
             <div id="card" class="card text-center border rounded mt-1 mt-md-5">
-                <text id="question-text" class="card-header py-3 lead image.png"></text>
+                <text id="question-text" class="card-header py-3 lead image.png">
+                    <div class="spinner-border mt-2" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </text>
                 <div id="category-value-container" class="container mt-1 mt-md-4">
                     <div class="row justify-content-around align-items-center mb-2">
                         <div id="category-container"
                             class="col-md-3 rounded pt-md-2 pb-md-2 mb-1 mb-md-0 bg-primary text-warning fs-5">
                             <div id="category-tite" class="fw-bold">Category:</div>
-                            <div id="category-text" class="fw-bold"></div>
+                            <div id="category-text" class="fw-bold">
+                                <div class="spinner-border text-warning mt-3" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
                         </div>
                         <div id="value-container"
                             class="col-md-3 rounded pt-md-2 pb-md-2 mb-1 mb-1 mb-md-0 bg-primary text-warning fs-5">
                             <div id="value-tite" class="fw-bold">Value:</div>
-                            <div id="value-text" class="fw-bold"></div>
+                            <div id="value-text" class="fw-bold">
+                                <div class="spinner-border text-warning mt-3" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
                         </div>
                         <div id="points-container"
                             class="col-md-3 rounded pt-md-2 pb-md-2 mb-1 bg-primary text-warning fs-5">
