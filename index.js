@@ -15,7 +15,7 @@ let points = 0;
 
 const newJeopardyQuestion = async () => {
     try {
-        const res = await axios.get('http://jservice.io/api/random');
+        const res = await axios.get('https://jservice.io/api/random');
         submit.disabled = false;
         questionText.innerHTML = res.data[0].question;
         category.innerHTML = res.data[0].category.title;
